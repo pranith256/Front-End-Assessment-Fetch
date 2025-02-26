@@ -17,7 +17,7 @@ const DogSearch: React.FC<DogSearchProps> = ({ favorites, setFavorites, setIsAut
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
   const [page, setPage] = useState(0);
   const [totalResults, setTotalResults] = useState(0);
-  const pageSize = 12;
+  const pageSize = 10;
   const totalPages = Math.ceil(totalResults / pageSize);
 
   const BASE_URL = process.env.BASE_URL || "https://frontend-take-home-service.fetch.com";
@@ -145,7 +145,7 @@ const DogSearch: React.FC<DogSearchProps> = ({ favorites, setFavorites, setIsAut
       </div>
 
 
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-2 flex-grow">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 flex-grow">
         {dogs.length === 0 ? (
           <p>No dogs found.</p>
         ) : (
