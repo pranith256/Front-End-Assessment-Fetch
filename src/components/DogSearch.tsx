@@ -106,7 +106,7 @@ const DogSearch: React.FC<DogSearchProps> = ({ favorites, setFavorites, setIsAut
           </div>
 
           <button
-            className="bg-gray-200 px-4 py-2 rounded-md flex items-center gap-2 hover:bg-gray-300 ml-4 -mr-2"
+            className="bg-gray-200 px-4 py-2 rounded-md flex items-center gap-2 hover:bg-gray-300 ml-4"
             onClick={() => setSortOrder(sortOrder === "asc" ? "desc" : "asc")}
           >
             Sort by Breed {sortOrder === "asc" ? "↑" : "↓"}
